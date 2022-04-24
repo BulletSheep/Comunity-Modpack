@@ -75,3 +75,31 @@ mods.extendedcrafting.TableCrafting.addShaped("ultimate_ingot", 4, <item:extende
 [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
 [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>], 
 [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]]);
+
+//Recipe Removed
+
+craftingTable.removeRecipe(<item:extendedcrafting:basic_table>);
+craftingTable.removeRecipe(<item:extendedcrafting:advanced_table>);
+craftingTable.removeRecipe(<item:extendedcrafting:elite_table>);
+craftingTable.removeRecipe(<item:extendedcrafting:ultimate_table>);
+
+//Extended Crafting Table
+//Basic
+mods.extendedcrafting.CombinationCrafting.addRecipe("688621b3-33d7-44bd-b3e8-28883de3adb4", <item:extendedcrafting:basic_table>, 50000, [
+	<item:minecraft:iron_block>, <item:extendedcrafting:basic_component>, <item:extendedcrafting:basic_component>, <item:refinedstorage:crafting_grid>, <item:extendedcrafting:basic_component>, <item:extendedcrafting:black_iron_slate>, <item:extendedcrafting:basic_catalyst>, <item:extendedcrafting:basic_component>, <item:refinedstorage:crafting_grid>
+]);
+
+//Advanced
+mods.extendedcrafting.CombinationCrafting.addRecipe("77b7a674-ad70-4905-8b47-cea7dc6c001e", <item:extendedcrafting:advanced_table>, 100000, [
+	<item:minecraft:gold_block>, <item:extendedcrafting:advanced_catalyst>, <item:extendedcrafting:advanced_component>, <item:extendedcrafting:basic_table>, <item:extendedcrafting:advanced_component>, <item:extendedcrafting:advanced_component>, <item:extendedcrafting:basic_table>, <item:extendedcrafting:advanced_component>, <item:extendedcrafting:black_iron_slate>
+]);
+
+//Elite
+mods.extendedcrafting.CombinationCrafting.addRecipe("1df2654d-aabb-4094-92c0-74c94712688c", <item:extendedcrafting:elite_table>, 150000, [
+	<item:minecraft:diamond_block>, <item:extendedcrafting:elite_component>, <item:extendedcrafting:elite_component>, <item:extendedcrafting:advanced_auto_table>, <item:extendedcrafting:elite_component>, <item:extendedcrafting:black_iron_slate>, <item:extendedcrafting:elite_catalyst>, <item:extendedcrafting:elite_component>, <item:extendedcrafting:advanced_auto_table>
+]);
+
+//Ultimate
+mods.extendedcrafting.CombinationCrafting.addRecipe("06f86a57-309d-4c4c-8c23-f688c222d090", <item:extendedcrafting:ultimate_table>, 200000, [
+	<item:minecraft:emerald_block>, <item:extendedcrafting:ultimate_component>, <item:extendedcrafting:ultimate_component>, <item:extendedcrafting:elite_table>, <item:extendedcrafting:ultimate_component>, <item:extendedcrafting:black_iron_slate>, <item:extendedcrafting:ultimate_catalyst>, <item:extendedcrafting:ultimate_component>, <item:extendedcrafting:elite_table>
+]);
